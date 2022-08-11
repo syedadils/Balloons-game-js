@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balloon Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <div id="score-label">
+      Score: <span id="scoreCount">0</span>
+    </div>
+
+    <div class="color">
+      Find color: <span id="fc"></span>
+    </div>
+
+   <div class="container">
+      <div class="balloon" id="bln-0" onClick="findBalloon('bln-0')"></div>
+      <div class="balloon" id="bln-1" onClick="findBalloon('bln-1')"></div>
+      <div class="balloon" id="bln-2" onClick="findBalloon('bln-2')"></div>
+      <div class="balloon" id="bln-3" onClick="findBalloon('bln-3')"></div>
+      <div class="balloon" id="bln-4" onClick="findBalloon('bln-4')"></div>
+      <div class="balloon" id="bln-5" onClick="findBalloon('bln-5')"></div>
+      <div class="balloon" id="bln-6" onClick="findBalloon('bln-6')"></div>
+      <div class="balloon" id="bln-7" onClick="findBalloon('bln-7')"></div>
+      <div class="balloon" id="bln-8" onClick="findBalloon('bln-8')"></div>
+      <div class="balloon" id="bln-9" onClick="findBalloon('bln-9')"></div>
+      <div class="balloon" id="bln-10" onClick="findBalloon('bln-10')"></div>
+
+      <div class="balloon" id="bln-11" onClick="findBalloon('bln-11')"></div>
+      <div class="balloon" id="bln-12" onClick="findBalloon('bln-12')"></div>
+      <div class="balloon" id="bln-13" onClick="findBalloon('bln-13')"></div>
+      <div class="balloon" id="bln-14" onClick="findBalloon('bln-14')"></div>
+      <div class="balloon" id="bln-15" onClick="findBalloon('bln-15')"></div>
+      <div class="balloon" id="bln-16" onClick="findBalloon('bln-16')"></div>
+      <div class="balloon" id="bln-17" onClick="findBalloon('bln-17')"></div>
+      <div class="balloon" id="bln-18" onClick="findBalloon('bln-18')"></div>
+      <div class="balloon" id="bln-19" onClick="findBalloon('bln-19')"></div>
+      <div class="balloon" id="bln-20" onClick="findBalloon('bln-20')"></div>
+
+      <div class="balloon" id="bln-21" onClick="findBalloon('bln-21')"></div>
+      <div class="balloon" id="bln-22" onClick="findBalloon('bln-22')"></div>
+      <div class="balloon" id="bln-23" onClick="findBalloon('bln-23')"></div>
+      <div class="balloon" id="bln-24" onClick="findBalloon('bln-24')"></div>
+      <div class="balloon" id="bln-25" onClick="findBalloon('bln-25')"></div>
+      <div class="balloon" id="bln-26" onClick="findBalloon('bln-26')"></div>
+      <div class="balloon" id="bln-27" onClick="findBalloon('bln-27')"></div>
+      <div class="balloon" id="bln-28" onClick="findBalloon('bln-28')"></div>
+      <div class="balloon" id="bln-29" onClick="findBalloon('bln-29')"></div>
+      <div class="balloon" id="bln-30" onClick="findBalloon('bln-30')"></div>
+      <div class="balloon" id="bln-31" onClick="findBalloon('bln-31')"></div>
+      <div class="balloon" id="bln-32" onClick="findBalloon('bln-32')"></div>
+      <div class="balloon" id="bln-33" onClick="findBalloon('bln-33')"></div>
+      <div class="balloon" id="bln-34" onClick="findBalloon('bln-34')"></div>
+  </div>
+
+   
+ <!-- <div class="row-1" id="container">
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+ </div>
+
+ <div class="row-2" id="container">
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+ </div>
+
+ <div class="row-3" id="container">
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+    <div class="ballaons" id="b1" onClick="dis()"></div>
+ </div> -->
+
+</div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
